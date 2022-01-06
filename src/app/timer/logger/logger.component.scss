@@ -1,0 +1,13 @@
+.logger-container{
+  .container{
+    h4{
+      text-align: center;
+    }
+    .log-div{
+      font-size: 15px;
+      overflow-y: auto;
+      text-align: left;
+      max-height: 120px;
+    }
+  }
+}

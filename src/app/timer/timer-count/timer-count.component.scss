@@ -1,0 +1,22 @@
+.timer-count-container{
+  .container{
+    text-align: center;
+    .count {
+      font-family:Arial;
+      font-size: 50px;
+      display: flex;
+      div {
+        -ms-flex: 1;  /* IE 10 */
+        flex: 1;
+      }
+    }
+    .count-label {
+      font-size: 20px;
+      display: flex;
+      div {
+        -ms-flex: 1;  /* IE 10 */
+        flex: 1;
+      }
+    }
+  }
+}

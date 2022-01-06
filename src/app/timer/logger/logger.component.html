@@ -1,0 +1,10 @@
+<div class="logger-container">
+  <div class="container">
+    <h4>Logs</h4>
+    <div *ngIf="logsArray.length > 0" class="log-div">
+      <div *ngFor="let log of logsArray">
+        {{log.action}}{{log.time  | date:'dd-M-yyyy hh:mm:ss a '}}
+      </div>
+    </div>
+  </div>
+</div>

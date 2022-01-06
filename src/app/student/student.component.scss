@@ -1,0 +1,11 @@
+.student-container{
+  .container{
+    table {
+      width: 100%;
+      border: 1px solid black;
+      .mat-header-cell{
+        font-weight: bold;
+      }
+    }
+  }
+}

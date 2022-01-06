@@ -1,0 +1,28 @@
+.timer-limit-container{
+  .container{
+    text-align: center;
+    .timer-limit-input{
+      label{
+        font-size: 20px;
+      }
+      input{
+        border-radius: 2px;
+        margin-left: 1%;
+      }
+    }
+    .buttons-div{
+      margin: 1%;
+      button{
+        margin: 1%;
+        width: 70px;
+      }
+    }
+    .pause-timing-div{
+      width: 50%;
+      font-size: 15px;
+      overflow-y: auto;
+      text-align: left;
+      height: 90px;
+    }
+  }
+}

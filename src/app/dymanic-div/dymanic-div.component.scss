@@ -1,0 +1,12 @@
+.dynamic-container{
+  .container{
+    margin-top: 10px;
+    .dynamic-div{
+      border: 1px solid green;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      padding-top: 80px;
+    }
+  }
+}

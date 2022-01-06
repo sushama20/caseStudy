@@ -1,0 +1,23 @@
+<div class="clock-limit-container">
+  <div class="container">
+    <div class="timer-limit-input">
+      <label for="timer">Enter Timer Limit:</label>
+      <input type="number" id="item-input" min="1" value="1" #newTimerLimit [(ngModel)]="countInput">
+    </div>
+    <div class="buttons-div">
+      <button  class="btn btn-primary" (click)="addNewTimerLimit(newTimerLimit.value)" >
+        {{buttonText}}
+      </button>
+      <button type="reset" class="btn btn-secondary"
+        (click)="resetButtonClicked(newTimerLimit.value)"
+        [disabled]="isResetButtonDisabled">
+        Reset
+      </button>
+    </div>
+    <div class="pause-timing-div" *ngIf="pauseTimingArray.length > 0">
+      <div *ngFor="let time of pauseTimingArray">
+        Paused at {{time}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="student-container">
+  <div class="container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container *ngFor="let column of columns;let i=index" [cdkColumnDef]="column.columnDef">
+        <mat-header-cell  *cdkHeaderCellDef (click)="rowClickedData(column.header)">{{ column.header }}</mat-header-cell>
+        <mat-cell  *cdkCellDef="let row">{{ column.cell(row) }}</mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </table>
+  </div>
+</div>

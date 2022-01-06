@@ -1,0 +1,19 @@
+<div class="dynamic-container">
+  <div class="container" id="content" >
+    <div class="dynamic-div">
+      <button #btn (click)="showAlert($event)" id="1">
+        div 1
+     </button>
+    </div>
+    <div class="dynamic-div" >
+      <button (click)="showAlert($event)" id="2">
+        div 2
+      </button>
+    </div>
+    <div class="dynamic-div">
+      <button (click)="showAlert($event)" id="3">
+        div 3
+      </button>
+    </div>
+  </div>
+</div>

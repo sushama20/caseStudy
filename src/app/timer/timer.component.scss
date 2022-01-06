@@ -1,0 +1,19 @@
+.timer-container{
+  .container{
+    .main {
+      border: 1px solid black;
+      display: flex;
+      .div-border{
+        border: 2px solid black;
+      }
+      div {
+        -ms-flex: 1;  /* IE 10 */
+        flex: 1;
+        margin:5px;
+        height: 200px;
+        padding: 1%;
+      }
+    }
+  }
+}
+

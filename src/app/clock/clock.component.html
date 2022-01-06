@@ -1,0 +1,36 @@
+
+<div class="clock-container">
+  <div class="container">
+    Using input/output decorators
+      <div class="main">
+        <div class="div-border">
+          <clock-counter
+          (isTimerCleared)="isTimerCleared($event)"
+          [timerActions]="currentTimerAction"
+          (pauseTiming)="getTimerPausedTiming($event)"
+          (log)="getLogs($event)"
+          (countEmitter)="getCount($event)"></clock-counter>
+        </div>
+        <div class="div-border">
+          <clock-limit
+          (timerActions) ="getTimerActions($event)"
+          [isTimerCompleted]= "isTimerClear"
+          [pauseTiming]="pauseTime"
+          >
+        </clock-limit>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <clock-logger
+          [logsArray] = "logs">
+          </clock-logger>
+        </div>
+        <div>
+          <clock-count
+          [timerCount]="timerCount">
+          </clock-count>
+        </div>
+      </div>
+  </div>
+</div>
