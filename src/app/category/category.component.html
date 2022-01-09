@@ -1,20 +1,18 @@
 <div class="category">
   <div class="container" >
-    <div class="row">
-      <div class="btn-div">
-        <button title="Grid View" (click)="gridViewClicked()" >
-          <mat-icon >grid_on</mat-icon>
-        </button>
-        <button title="List View" (click)="listViewClicked()" class="list-view-button">
-          <mat-icon>list</mat-icon>
-        </button>
-        <select name="price" id="price" class="select-panel"  #mySelect
-        (change)="getSortedArray(mySelect.value)">
-          <option value="" disabled selected>Select price filter</option>
-          <option value="High To Low">Price: High To Low</option>
-          <option value="Low To High" >Price: Low To High</option>
-        </select>
-      </div>
+    <div class="btn-div">
+      <button title="Grid View" (click)="gridViewClicked()">
+        <mat-icon >grid_on</mat-icon>
+      </button>
+      <button title="List View" (click)="listViewClicked()" class="list-view-button">
+        <mat-icon>list</mat-icon>
+      </button>
+      <select name="price" id="price" class="select-panel" #mySelect
+      (change)="getSortedArray(mySelect.value)">
+        <option value="" disabled selected>Select price filter</option>
+        <option value="High To Low">Price: High To Low</option>
+        <option value="Low To High" >Price: Low To High</option>
+      </select>
     </div>
     <div *ngIf="view=='grid'" class="grid-view-box" >
       <div class="row" >
@@ -23,7 +21,7 @@
           <mat-card-title>{{item.name}}
           </mat-card-title>
           <img mat-card-image src= {{item.imgPath}} alt="Photo of product" class="img-height">
-          <mat-card-content matTooltip="Info about the action">
+          <mat-card-content >
             ₹{{item.price}}
             <p class="description">
               {{item.description}}

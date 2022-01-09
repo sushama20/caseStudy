@@ -1,6 +1,8 @@
 .dynamic-container{
   .container{
     margin-top: 10px;
+    border: 1px solid red;
+    overflow-y: scroll;
     .dynamic-div{
       border: 1px solid green;
       width: 200px;
